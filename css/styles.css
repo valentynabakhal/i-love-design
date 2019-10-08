@@ -12,12 +12,12 @@ body {
     margin: 0;
     padding: 0;
     font: 1.8rem/1.6 Raleway, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .ba-container {
     max-width: 960px;
     width: 96%;
-    outline: 3px solid red;
 }
 
 header {
@@ -31,10 +31,14 @@ header {
 }
 
 header h1 {
+    margin: 15vh 0 30px 0;
+}
+
+.title {
     text-transform: uppercase;
     font-size: 8rem;
     line-height: 1;
-    margin: 15vh 0 30px 0;
+    text-align: center;
 }
 
 header p {
@@ -48,7 +52,7 @@ header p {
     border: 2px solid #fff;
     display: inline-block;
     border-radius: 50%;
-    background-image: url(../arrow.png);
+    background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
     background-position: center;
     transition: all .25s ease-in;
@@ -63,4 +67,32 @@ header p {
 .scroll:active {
     border-color: rgba(255,255,255, .6);
     background-position: center 60%;
+}
+
+main {
+    padding: 120px 0;
+    background-image: url(../img/bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    font-size: 3rem;
+    text-align: center;
+    color: #464b4f;
+    padding: 0 30px;
+}
+
+.about p {
+    margin-bottom: 2em;
+}
+
+.skills {
+    margin-top: 120px;
+    color: #464b4f;
+}
+
+.skills h3 {
+    text-transform: uppercase;
 }
